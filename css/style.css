@@ -1,0 +1,167 @@
+body,
+html {
+  overflow-x: hidden;
+  font-family: "Inter", sans-serif;
+}
+body.overflow,
+html.overflow {
+  overflow: hidden;
+}
+
+body {
+  background: #f9f9f9;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+  display: inline-block;
+}
+a:hover {
+  text-decoration: none;
+}
+a:focus {
+  outline: none;
+}
+
+input {
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+}
+input:focus {
+  outline: none;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:focus {
+  outline: none;
+}
+
+.header {
+  height: 100px;
+  background: #000;
+}
+
+.footer {
+  height: 100px;
+  background: #000;
+}
+
+.wrapper {
+  height: 100vh;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+.wrapper .hidden {
+  opacity: 0;
+  z-index: -1;
+  position: absolute;
+}
+
+.text-animate {
+  padding: 200px 20px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.text-animate svg {
+  width: 85vw;
+}
+
+.div {
+  height: 150vh;
+  background: #0e6131;
+  opacity: 0;
+  transition: opacity 0s;
+  position: relative;
+}
+.div .div-wrap {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+  padding: 0 20px;
+  transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  width: 100%;
+}
+.div.visible {
+  opacity: 1;
+}
+.div .text-wrap {
+  width: 40%;
+  padding-right: 2%;
+  transition: 3s;
+}
+.div .text-wrap h2 {
+  font-size: 4vw;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.div .text-wrap p {
+  font-size: 1.1vw;
+  line-height: 150%;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 20px;
+}
+.div .img-wrap {
+  position: relative;
+  z-index: 0;
+  transition: 4s;
+  width: 40%;
+}
+.div .img-wrap .img1 {
+  width: 100%;
+}
+.div .img-wrap .img2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
